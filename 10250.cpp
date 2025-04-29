@@ -1,14 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int T;
 
     cin >> T;
 
-    while (T > 0)
-	{
+    while (T > 0) 	{
         int H, W, N;
 
         cin >> H >> W >> N;

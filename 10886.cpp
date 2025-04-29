@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int people, yes = 0, no = 0;
 
     cin >> people;
