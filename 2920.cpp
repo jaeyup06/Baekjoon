@@ -1,23 +1,22 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
+    vector<int> ascending = {1, 2, 3, 4, 5, 6, 7, 8};
+    vector<int> descending = {8, 7, 6, 5, 4, 3, 2, 1};
+
     vector<int> eum(8);
     for (int i = 0; i < 8; ++i) {
         cin >> eum[i];
     }
 
-    vector<int> ascending = {1, 2, 3, 4, 5, 6, 7, 8};
-    vector<int> descending = {8, 7, 6, 5, 4, 3, 2, 1};
-
     if (eum == ascending) {
-        cout << "ascending";
+        cout << "ascending" << endl;
     } else if (eum == descending) {
-        cout << "descending";
+        cout << "descending" << endl;
     } else {
-        cout << "mixed";
+        cout << "mixed" << endl;
     }
 
     return 0;

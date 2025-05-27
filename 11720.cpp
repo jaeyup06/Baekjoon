@@ -1,16 +1,19 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-    int N, sum = 0;
+    int N;
     string numbers;
     cin >> N >> numbers;
 
-    for(int i = 0; i < N; i++) {
+    int sum = 0;
+
+    for (int i = 0; i < N; ++i) {
         sum += numbers[i] - '0';
     }
 
-    cout << sum;
+    cout << sum << endl;
 
     return 0;
 }

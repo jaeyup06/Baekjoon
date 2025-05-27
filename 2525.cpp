@@ -1,4 +1,5 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
@@ -8,7 +9,7 @@ int main() {
 
 	int minute = A * 60 + B + C;
 
-	A = minute / 60 % 24;
+	A = (minute / 60) % 24;
 	B = minute % 60;
 
 	cout << A << " " << B << endl;

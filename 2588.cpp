@@ -1,17 +1,14 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
     int a, b;
-
     cin >> a >> b;
 
-    int c, d, f;
-
-    f = b / 100;
-    d = b - (f * 100);
-    d /= 10;
-    c = b - (f * 100) - (d * 10);
+    int c = b % 10;
+    int d = (b / 10) % 10;
+    int f = b / 100;
 
     cout << a * c << endl;
     cout << a * d << endl;

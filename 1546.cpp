@@ -1,29 +1,31 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
     int N;
-    double sum = 0, average, M;
     cin >> N;
 
     vector<double> score(N);
+
+    double sum = 0;
+    double average;
+    double max_score;
 
     for (int i = 0; i < N; ++i) {
         cin >> score[i];
     }
 
-    M = *max_element(score.begin(), score.end());
+    max_score = *max_element(score.begin(), score.end());
 
     for (int i = 0; i < N; ++i) {
-        score[i] = score[i] / M * 100;
+        score[i] = score[i] / max_score * 100;
         sum += score[i];
     }
 
     average = sum / N;
 
-    cout << (average * 100 + 0.5) / 100.0;
+    cout << (average * 100 + 0.5) / 100.0 << endl;
 
     return 0;
 }

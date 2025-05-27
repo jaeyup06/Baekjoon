@@ -1,18 +1,20 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	int a, b, c, d, e;
+	int sum = 0;
 
-	cin >> a >> b >> c >> d >> e;
+	for (int i = 0; i < 5; ++i) {
+		int num;
+		cin >> num;
 
-	if(a < 40) a = 40;
-	if(b < 40) b = 40;
-	if(c < 40) c = 40;
-	if(d < 40) d = 40;
-	if(e < 40) e = 40;
+		num = max(num, 40);
 
-	int avg = (a + b + c + d + e) / 5;
+		sum += num;
+	}
+
+	int avg = sum / 5;
 
 	cout << avg << endl;
 

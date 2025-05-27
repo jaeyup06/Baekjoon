@@ -1,8 +1,12 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-    cout << "\\    /\\\n )  ( ')\n(  /  )\n \\(__)|" << endl;
+    cout << "\\    /\\" << "\n";
+    cout << " )  ( ')" << "\n";
+    cout << "(  /  )" << "\n";
+    cout << " \\(__)|" << endl;
 
     return 0;
 }

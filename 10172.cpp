@@ -1,8 +1,13 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-    cout << "|\\_/|\n|q p|   /}\n( 0 )\"\"\"\\\n|\"^\"`    |\n||_/=\\\\__|" << endl;
+    cout << "|\\_/|" << "\n";
+    cout << "|q p|   /}" << "\n";
+    cout << "( 0 )\"\"\"\\" << "\n";
+    cout << "|\"^\"`    |" << "\n";
+    cout << "||_/=\\\\__|" << endl;
 
     return 0;
 }

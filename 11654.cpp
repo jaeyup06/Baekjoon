@@ -1,11 +1,12 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-    char a;
+    char A;
 
-    cin >> a;
-    cout << (int) a << endl;
+    cin >> A;
+    cout << (int)A << endl;
 
     return 0;
 }

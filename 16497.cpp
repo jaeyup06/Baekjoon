@@ -1,31 +1,34 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
+    vector<int> vec(31, 0);
+
     int N;
     cin >> N;
 
-    vector<int> vec(32, 0);
-    for (int i = 0; i < N; ++i) {
-        int start, end;
-        cin >> start >> end;
-        for (int d = start; d < end; ++d) {
-            vec[d]++;
+    while (N--) {
+        int loan_date, return_date;
+        cin >> loan_date >> return_date;
+
+        for (int i = loan_date; i < return_date; ++i) {
+            vec[i] += 1;
         }
     }
 
-    int K;
-    cin >> K;
+    int number_of_books;
+    cin >> number_of_books;
 
-    for (int d = 1; d <= 31; ++d) {
-        if (vec[d] > K) {
+    for (int i = 0; i <= vec.size(); ++i) {
+        if (vec[i] > number_of_books) {
             cout << 0 << endl;
-            return 0;
+
+            break;
+        } else if (i == vec.size()) {
+            cout << 1 << endl;
         }
     }
 
-    cout << 1 << endl;
     return 0;
 }

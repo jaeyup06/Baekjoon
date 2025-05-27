@@ -1,23 +1,23 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-    int N, M, max, min;
-
+    int N, M;
     cin >> N >> M;
 
-	max = M;
-	min = M;
+	int max_value = M;
+	int min_value = M;
 
 	N--;
-
-	while(N--) {
+	while (N--) {
 		cin >> M;
 
-		if(M > max) max = M;
-		if(M < min) min = M;
+		max_value = max(max_value, M);
+		min_value = min(min_value, M);
 	}
-	cout << min << " " << max << endl;
+
+	cout << min_value << " " << max_value << endl;
 
     return 0;
 }

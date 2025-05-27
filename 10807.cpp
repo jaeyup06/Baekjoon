@@ -1,25 +1,24 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-    vector<int> vec;
-    int N, v;
+    vector<int> numbers;
 
+    int N;
     cin >> N;
 
-    while(N--) {
+    while (N--) {
         int num;
-
         cin >> num;
 
-        vec.push_back(num);
+        numbers.push_back(num);
     }
 
+    int v;
     cin >> v;
 
-    cout << count(vec.begin(), vec.end(), v);
+    cout << count(numbers.begin(), numbers.end(), v) << endl;
 
     return 0;
 }

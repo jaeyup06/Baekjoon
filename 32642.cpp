@@ -1,24 +1,24 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
     int N;
-    long long sum = 0, num = 0;
-
     cin >> N;
 
-    while(N--) {
-        long long anger;
+    long long sum = 0;
+    long long num = 0;
 
+    while (N--) {
+        long long anger;
         cin >> anger;
 
-        if(anger == 0) sum--;
-        else sum++;
+        sum += (anger == 0 ? -1 : 1);
 
         num += sum;
     }
 
-    cout << num;
+    cout << num << endl;
 
     return 0;
 }

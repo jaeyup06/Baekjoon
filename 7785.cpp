@@ -1,15 +1,16 @@
-#include <iostream>
-#include <set>
-#include <string>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-    int N;
-    cin >> N;
-    string name, recode;
     set<string> people;
 
-    for (int i = 0; i < N; i++) {
+    int N;
+    cin >> N;
+
+    string name, recode;
+
+    for (int i = 0; i < N; ++i) {
         cin >> name >> recode;
 
         if (recode == "enter") {
@@ -20,7 +21,7 @@ int main() {
     }
 
     for (auto it = people.rbegin(); it != people.rend(); ++it) {
-        cout << *it << "\n";
+        cout << *it << endl;
     }
 
     return 0;

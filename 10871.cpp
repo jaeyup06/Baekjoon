@@ -1,17 +1,16 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
     int N, X;
-
     cin >> N >> X;
 
-	while(N--) {
+	while (N--) {
 		int A;
-
 		cin >> A;
 
-		if(A < X) cout << A << " ";
+		if (A < X) cout << A << " ";
 	}
 
     return 0;

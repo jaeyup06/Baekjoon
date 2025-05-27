@@ -1,20 +1,20 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-    vector<int> vec;
-    for(int i = 0; i < 10; i++) {
-        int num;
+    vector<int> remainders;
 
-        cin >> num;
+    for (int i = 0; i < 10; ++i) {
+        int remainder;
+        cin >> remainder;
 
-        if(find(vec.begin(), vec.end(), num % 42) == vec.end()) {
-            vec.push_back(num%42);
+        if (find(remainders.begin(), remainders.end(), remainder % 42) == remainders.end()) {
+            remainders.push_back(remainder % 42);
         }
     }
-    cout << vec.size();
+
+    cout << remainders.size() << endl;
 
     return 0;
 }
