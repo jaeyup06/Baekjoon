@@ -1,3 +1,3 @@
 <a href="https://solved.ac/profile/jaeyup06">
-  <img src="https://github-readme-solvedac.vercel.app/api/?handle=jaeyup06" width="980">
+  <img src="https://github-readme-solvedac.vercel.app/api/?handle=jaeyup06" width="950">
 </a>
